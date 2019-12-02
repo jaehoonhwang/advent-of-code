@@ -13,6 +13,7 @@ def problem_part2(lines):
     return
 
 def day_main():
+    print("2019 AOC Challenge Day")
     input_path = path_join(directory_path, input_filename)
     lines = read_file_line(input_path)
 
