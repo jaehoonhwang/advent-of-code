@@ -81,11 +81,7 @@ def graphify(mapping):
                         graph[candidate].append((potential, count))
                         graph[potential].append((candidate, count))
                 else:
-                    
-
-                for potential in potentials:
-
-
+                    pass
 
 
 def problem_part1(wire1, wire2):
