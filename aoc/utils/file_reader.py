@@ -9,12 +9,10 @@ def read_file_line(path, delimiter=" "):
     count = 1
 
     with open(path) as f:
-        line = f.readline().strip()
-        ret.append(line)
-        while line:
-            line = f.readline().strip()
-            if line:
-                ret.append(line)
+        lines = f.readlines()
+        for line in lines:
+            line = line.strip()
+            ret.append(line)
             count += 1
 
     print("File read counts: {}".format(count))
