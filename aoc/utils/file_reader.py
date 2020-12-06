@@ -10,7 +10,7 @@ def read_file_line(path, delimiter=" "):
 
     with open(path) as f:
         lines = f.readlines()
-        for line in lines:
+        for i, line in enumerate(lines):
             line = line.strip()
             ret.append(line)
             count += 1
